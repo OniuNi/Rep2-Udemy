@@ -1,0 +1,22 @@
+#an bisect
+#an bisect - algoritm
+
+# orice an care se divide cu 4
+#   exceptand anii care se divid cu 100
+#     daca nu cumva se divid si cu 400
+
+# an % 4 == 0
+
+
+
+an = int(input("Care este anul pe care doriti sa il verificati? "))
+if an % 4 == 0:
+  if an % 100 == 0:
+    if an % 400 == 0:
+      print(f"Anul {an} este bisect!")
+    else:
+      print(f"Anul {an} nu este bisect!")
+  else:
+    print(f"Anul {an} este bisect!")
+else:
+  print(f"Anul {an} nu este bisect!")
